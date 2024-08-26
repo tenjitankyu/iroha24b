@@ -1,0 +1,357 @@
+/* ===== Webサイト全体のスタイル ===== */
+/* html */
+html {
+  height: 100%;
+}
+
+/* body */
+body {
+  font-family: sans-serif;
+  height: 100%;
+  margin: 0;
+}
+
+
+/* h1見出し */
+
+ h1 {
+    color: #ffffff;
+    font-size: 150px;
+    font-family: Arial;
+
+    text-align: center;
+    border-radius: 90px;
+    padding: 20px;
+    margin: 30px;
+    display: inline-block;
+    text-shadow: 1px 1px 0 #333, -1px -1px 0 #333, -1px 1px 0 #333, 1px -1px 0 #333, 0px 1px 0 #333, -1px 0 #333, -1px 0 0 #333, 1px 0 0 #333;
+  color: #fff;
+  text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);}
+  .h1::before {
+  content: attr(h1);
+    position: absolute;
+    z-index: -1;
+    text-shadow: 4px 4px #333;
+    -webkit-text-stroke: 4px #333;
+}
+
+ .menu h2{
+   padding-top:20px;
+   padding-left:20px;
+   padding-right:20px;
+   font-size:30px;
+ }
+ 
+ 
+ 
+/* ===== ヘッダーのスタイル ===== */
+/* ヘッダーの箱 */
+  header {
+    background-image: url(img/並列ロマンスカー明るめ.jpg);
+     background-size: cover;
+    width: 100%;
+    height: 700px;
+    padding-top: 50px;
+    padding-bottom: 10px;
+  }
+  
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 50%;
+  overflow: hidden;
+}
+
+.menu-button {
+  display: block;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.bar {
+  display: block;
+  width: 35px;
+  height: 5px;
+  margin: 5px 0;
+  background-color: #fff;
+  transition: 0.4s;
+}
+#menu-toggle:checked ~ .menu-button .bar:nth-child(1) {
+  transform: rotate(45deg) translate(-2px, 5px);
+  background-color:#000000;
+  height:3px;
+  width:25px;
+}
+#menu-toggle:checked ~ .menu-button .bar:nth-child(2) {
+  opacity: 0;
+}
+#menu-toggle:checked ~ .menu-button .bar:nth-child(3) {
+  transform: rotate(-45deg) translate(8px, -15px);
+  background-color:#000000;
+  height:3px;
+  width:25px;
+}
+#menu-toggle {
+  display: none;
+}
+.menu {
+  position: fixed;
+  padding-left:30px;
+  top: -100%;
+  left: 0;
+  width: 25%;
+  height: 70%;
+  border-bottom-right-radius: 30px;
+  background-color: #f3f3f3;
+  transition: 0.4s;
+  z-index: 1;
+  overflow-y: auto;
+}
+#menu-toggle:checked ~ .menu {
+  top: 0;
+}
+.menu ul {
+  list-style: none;
+  padding: 20px;
+}
+.menu ul li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 18px;
+  display: block;
+  padding: 10px 0;
+  transition: 0.2s;
+}
+.menu ul li a:hover {
+  color: #bf7497;
+  font-size:20px;
+}
+
+  
+  
+  
+/* ===== お店紹介のスタイル ===== */
+/* セクション */
+.shop {
+   background-image:  url(img/背景線路.jpg);
+   background-size: cover;
+  color: #00293c;
+  padding: 20px;
+}
+
+.rekidai {
+   background-image:  url(img/背景線路.jpg);
+   background-size: cover;
+  color: #00293c;
+  padding: 20px;
+}
+
+
+
+/* h2見出し */
+.title {
+  font-size: 30px;
+  border-left-style: solid;
+  border-left-width: 10px;
+  padding-left: 15px;
+  margin-bottom: 50px;
+}
+
+.geneki{
+  background-image: url(img/雨.jpg);
+   background-size: cover;
+    width:100%;
+  border-left-style: solid;
+ padding: 20px;
+ color: #ffffff;
+}
+
+.top{
+   font-size: 20px;
+  background-color: #1E656D;
+  padding-top: 10px;
+  padding-bottom:50px;
+  border-radius: 0px;
+  border-left-width: 10px;
+  padding-left: 15px;
+  color: #ffffff;
+}
+
+
+}
+/* 段落 */
+.shop p {
+  font-size: 20px;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 30px;
+  height: 120px;
+  text-align: center;
+}
+
+/* 画像 */
+.shop img {
+  float: left;/* 画像や箱の回り込み */
+}
+
+
+/* ===== パン紹介のスタイル ===== */
+/* セクション */
+.photo {
+  padding: 0px;
+   background-image:  url(img/senro.jpg); 
+    background-size: cover;
+}
+
+.photo{
+}
+
+/* h2見出し */
+.photo h2 {
+  color: #ffffff;
+  border-color: #808080;
+}
+
+/* h3見出し */
+.photo h3 {
+  color: #00293c;
+}
+
+/* 段落 */
+.photo p {
+  color: #ffffff;
+  float: left;/* 画像や箱の回り込みをやめる */
+}
+
+
+/* 小さな箱 */
+.small {
+  background-color: #ffffff;
+  width: 210px;
+  padding: 15px;
+  margin: 20px;
+  box-shadow: 10px 10px 20px #00293c;
+  font-size: 20px;
+  
+}
+
+.small a:hover{
+  background-color: #ffffff;
+  width: 225px;
+  margin: 20px;
+  box-shadow: 10px 10px 20px #00293c;
+  font-size: 25px;
+  
+}
+
+/* 箱 */
+.box {
+  float: left;
+}
+
+
+/* ===== 値段表のスタイル ===== */
+/* セクション */
+.price {
+  padding: 30px;
+  background-image:url(img/SE.jpg);
+}
+
+/* h2見出し */
+
+/* 表 */
+.price table {
+  border-collapse: collapse;/* 表の隙間（すきま） */
+  width: 100%;
+  background-image:  url(img/背景用ロマンスカー.jpg); 
+    background-size: cover;
+}
+
+/* 表のセル */
+.price td {
+  border: 1px solid #000000;
+  padding: 10px;
+}
+
+/* 表の見出しセル */
+
+
+/* ===== アクセス情報のスタイル ===== */
+/* セクション */
+.access {
+  padding: 30px;
+  background-color: #ffffdd;
+  height: 400px;
+  color: #663300;
+}
+
+/* h3見出し */
+.access h3 {
+  font-size: 50px;
+  font-family: lobster;
+  margin-top: 0px;
+}
+
+/* リスト */
+.access ul {
+  list-style-type: none;/* リストのマーカー */
+  padding-left: 0px;
+}
+
+.price {
+  padding: 30px;
+}
+
+.price h2 {
+  color: #ffffff;
+  border-color: #ffffff;
+}
+
+.price table {
+  background-color: #f4f3e6;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.price td {
+  border: 1px solid #494940;
+  padding: 10px;
+}
+
+.price th {
+  border: 1px solid #494940;
+  padding: 10px;
+  background-color: #d35100;
+  color: #000000;
+  text-align: left;
+}
+
+.season th {
+  background-color: #1e656d;
+}
+
+/* 箱 */
+.access div {
+  float: left;
+  width: 50%;
+}
+
+/* フッター */
+footer {
+  text-align: center;
+  background-color: #182d49;
+  color: #ffffff;
+}
+
+
